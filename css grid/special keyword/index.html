@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+<style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #ddd;
+    }
+
+    .container {
+        width: 60px;
+        margin: 50px auto;
+        display: grid;
+       grid-template-columns: repeat(9,1fr), repeat();
+    }
+
+    .item {
+        background-color: rgb(138, 209,254);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item:nth-child(even) {
+        background-color: rgb(9, 77, 20);
+    }
+    
+</style>
+    
+</body>
+</html>
